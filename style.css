@@ -1,0 +1,189 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    animation: slide-in 1s;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.link-navegacao {
+    font-size: 1.25em;
+    margin: 5px;
+}
+
+.link-navegacao:hover {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: blue;
+}
+
+.img-banner {
+    width: 100%;
+    animation: fade-in 2s;
+}
+
+.quem-somos {
+    padding: 0 10%;
+    text-align: justify;
+}
+
+.devs {
+    padding: 0 10%;
+}
+
+.card-devs {
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px rgb(195, 195, 195);
+    padding: 2%;
+    display: flex;
+}
+
+.img-devs {
+    width: 20%;
+    height: fit-content;
+    border-radius: 15px;
+    transition: scale 1s;
+}
+
+
+.img-devs:hover {
+    scale: 1.2;
+}
+
+.texto-devs {
+    padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .card-devs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img-devs {
+        width: 60%;
+    }
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    width: calc(33.33% - 4px);
+    margin: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-galeria {
+        width: calc(50% - 4px);
+        margin: 2px;
+    }
+}
+
+.contato-h2 {
+    padding: 0 7.5%;
+}
+
+.contato {
+    display: flex;
+    padding: 0 7.5%;
+}
+
+.contato-iframe {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .contato {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contato-iframe {
+        padding: 10px 0 0 0;
+        height: 400px;
+    }
+}
+
+.links-sociais {
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-sociais {
+    width: 60px;
+    padding: 20px;
+    
+}
+
+footer {
+    text-align: center;
+}
+
+.botao-topo {
+    width: 5%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+    .botao-topo {
+        display: none;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(0, -100px);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
